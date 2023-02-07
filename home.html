@@ -16,29 +16,31 @@
     <title>Ecommerce</title>
 </head>
 <body>
-    <header>
-        <div class="logo"><img class="ico" src="img/logo.png" alt="Soft landing" /></div>
-        <div class="check">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-        <nav class="nav-bar">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sell</a></li>
-                <li><a href="#">Request-Ad</a></li>
-                <li>
-                    <form method="post" action="/">
-                        <div class="icon">
-                            <input class="icona" type="text" placeholder="Search"><button type="submit" class="searchico"><i class="fa fa-search fa-2x" style="padding-right:3px; color:darkturquoise;"></i></button>
-                        </div>
-                    </form>
-                </li>
-                <li><a href="#">Login / Register</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="navv">
+        <header id="NavBar">
+            <div class="logo"><img class="ico" src="img/logo.png" alt="Soft landing" /></div>
+            <div class="check">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sell</a></li>
+                    <li><a href="#">Request-Ad</a></li>
+                    <li>
+                        <form method="post" action="/">
+                            <div class="icon">
+                                <input class="icona" type="text" placeholder="Search"><button type="submit" class="searchico"><i class="fa fa-search fa-2x" style="padding-right:3px; color:darkturquoise;"></i></button>
+                            </div>
+                        </form>
+                    </li>
+                    <li><a href="#">Login / Register</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
 
     <div class="sl">
         <section class="slider">
@@ -261,6 +263,20 @@
             }
             else {
                 cll[0].style.display = "block";
+            }
+        }
+    </script>
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        var navbar = document.getElementById("NavBar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
             }
         }
     </script>

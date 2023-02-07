@@ -95,6 +95,13 @@ nav ul li a:before {
         transform: scaleX(1);
         transform-origin: left;
     }
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: +1;
+    height: 80px;
+}
 
     @media only screen and (max-width:1320px){
         header{
