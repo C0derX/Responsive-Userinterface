@@ -140,8 +140,11 @@ nav ul li a:before {
     overflow: hidden;
 }
 .nav-bar.active{
+    z-index:+1;
     height:350px;
+    
 }
+
 .nav-bar ul{
     display:block;
     width:fit-content;
