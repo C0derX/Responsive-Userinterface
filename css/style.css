@@ -235,4 +235,7 @@ nav ul li a:before {
         margin-left: auto;
         width:60%;
     }
+    .dtl-btn {
+        margin-left: 30%;
+    }
 }
