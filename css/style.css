@@ -343,6 +343,9 @@ ul {
             width: 50%;
             margin-bottom: 30px;
         }
+        .login {
+            grid-template-columns: auto;
+        }
     }
 
     @media(max-width: 574px) {

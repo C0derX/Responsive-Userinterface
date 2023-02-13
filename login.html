@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/lightslider.css">
+    
+    <script type="text/javascript" src="js/JQuery3.3.1.js"></script>
+    <script type="text/javascript" src="js/lightslider.js"></script>
+    <script src="https://kit.fontawesome.com/bba64250bb.js" crossorigin="anonymous"></script>
+
+    <title>Ecommerce</title>
+</head>
+<body>
+    <div class="navv">
+        <header id="NavBar">
+            <div class="logo"><img class="ico" src="img/logo.png" alt="Soft landing" /></div>
+            <div class="check">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sell</a></li>
+                    <li><a href="#">Request-Ad</a></li>
+                    <li>
+                        <form method="post" action="/">
+                            <div class="icon">
+                                <input class="icona" type="text" placeholder="Search"><button type="submit" class="searchico"><i class="fa fa-search fa-2x" style="padding-right:3px; color:darkturquoise;"></i></button>
+                            </div>
+                        </form>
+                    </li>
+                    <li><a href="#">Login / Register</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="login ">
+        <div class="center">
+            <h2>Login</h2>
+            <form method="post">
+                <div class="txt_field">
+                    <input type="text" required />
+                    <label>Username</label>
+                </div>
+                <div class="txt_field">
+                    <input type="password" required />
+                    <label>Password</label>
+                </div>
+                <div class="pass">Forgot Password</div>
+                <input type="submit" value="Login" />
+            </form>
+        </div>
+        <div class="center">
+            <h2>Register</h2>
+            <form method="post">
+                <div class="txt_field">
+                    <input type="text" required />
+                    <label>Full Name</label>
+                </div>
+                <div class="txt_field">
+                    <input type="email" required />
+                    <label>Email</label>
+                </div>
+                <div class="txt_field">
+                    <input type="password" required />
+                    <label>Password</label>
+                </div>
+                <div class="pass">
+                    <input type="checkbox" id="terms" name="terms" value="terms">
+                    <label for="terms"> I hereby accept all Terms and Condition</label>
+                </div>
+                <input type="submit" value="Register" />
+            </form>
+        </div>
+    </div>
+   
+    <footer class="footer">
+        <div class="f-container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">terms & condition</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><a><i class="fa fa-location-dot"></i><span></span> Mother Earth</a></li>
+                        <li><a><i class="fa-solid fa-envelope"></i><span></span>admin@gmail.com</a></li>
+                        <li><a> <i class="fa-solid fa-phone"></i><span></span>+12345678</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <br /><br /><br />
+            <div class="copyright text-center c-white">
+                ©2023 - NI6H7 CR4WL3R. <span>All rights reserved.</span>
+            </div>
+        </div>
+        
+    </footer>
+
+    <!-------------------------script------------------------->
+    <script type="text/javascript" src="js/script.js"></script>
+    <script>
+        check = document.querySelector(".check");
+        check.onclick = function () {
+            let cll = document.getElementsByClassName("lSAction");
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+            if ($('nav.nav-bar').hasClass("active")) {
+                cll[0].style.display = "none";
+            }
+            else {
+                cll[0].style.display = "block";
+            }
+        }
+    </script>
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        var navbar = document.getElementById("NavBar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky");
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+</html>
